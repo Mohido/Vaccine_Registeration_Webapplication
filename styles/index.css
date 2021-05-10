@@ -1,0 +1,266 @@
+* {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --header-bg-color: #3f91c7;
+}
+.main-nav {
+    background-color: var(--header-bg-color);
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-header {
+    flex-grow: 5;
+    width: auto;
+    text-align: center;
+    color: azure;
+    text-shadow: 5px 5px 10px black;
+    padding: 10px 10px 10px 10px;
+    background-color: var(--header-bg-color);
+    display: inline-block;
+}
+
+.nav-options{
+    background-color: azure;
+    border-radius: 5px;
+    border: 1px solid black;
+    flex-grow: 1;
+    text-align: center;
+    width : auto;
+    height: 100%;
+}
+.nav-options span{
+    height: 100%;
+    border: 3px solid var(--header-bg-color);
+    background-color: var(--header-bg-color);
+    width: 5px;
+}
+.nav-options a{
+    background-color: azure;
+    display: inline-block;
+    padding : 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    margin: 0 10px 0 10px;
+}
+
+
+/*-------------------- Main Body -------------------------*/
+.main-container{
+    width:90%;
+    padding: 10px;
+    margin: auto;
+}
+.main-container section{
+    position: relative;
+    
+    border-radius: 10px;
+    border: 15px solid rgb(221, 245, 255);
+    margin: 30px 0 30px 0;
+
+}
+.main-container section h1{
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 3px;
+    background-color: rgb(221, 245, 255);
+    top: -20px;
+}
+.main-container section .section-content{
+    margin-top: 15px ;
+    overflow: auto;
+}
+
+.reserved-details{
+    padding: 10px; 
+    border-radius: 3px ;
+    
+}
+
+.delete-link{
+    margin: 10px 0 10px 0;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.reserved-details .delete-btn{
+    padding: 5px 10px 5px 10px;
+    
+    display: block;
+    background-color: azure;
+    border: 1px black solid;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+.reserved-details .delete-btn:hover{
+    background-color: red;
+    color: white;
+}
+
+
+
+/*-------------------- Time Table -------------------------*/
+
+#given-dates{
+    border-collapse: collapse;
+    margin: 10px auto;
+    min-width: 250px;
+    width:80%;
+}
+
+#search-btn{
+    outline: none;
+    height: 25px;
+    width: 50px;
+    cursor: pointer;
+    border: 1px solid rgb(131, 158, 145);
+    border-radius: 5px;
+    background-color: rgb(235, 235, 235);
+    transition: background 0.1s ease-in-out;
+    margin: 10px 20px;
+   
+}
+#search-btn:hover{
+    border: 1px solid rgb(115, 181, 202);
+    background-color: rgb(228, 242, 253);
+}
+.search-input{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#given-dates td{
+    text-align: center;
+    width: 80px;
+    height: 100px;
+    overflow:auto;
+    border: 1px solid black;
+    margin: 10px;
+}
+.disabled-cell{
+    background-color: rgb(219, 219, 219);
+}
+.time-link{
+    font-size: small;
+    font-weight: bold;
+    display: inline-block;
+    padding: 2px 5px;
+    margin: 5px auto;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+}
+.free-slots{
+    background-color: lightgreen;
+}
+.full-slots{
+    background-color: lightcoral;
+}
+.span-link{
+    font-size: small;
+    font-weight: bold;
+    background-color: rgb(201, 201, 201);
+    display: inline-block;
+    padding: 2px 5px;
+    cursor: pointer;
+    margin: 5px auto;
+    border-radius: 5px;
+}
+.month-word{
+    padding: 10px;
+    margin: 10px;
+}
+.day-number{
+
+}
+
+/*---------------- Next-prev area ---------------- */
+.prev-next-area{
+    width: 90%;
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    margin: 10px auto;
+}
+.mnth-navs{
+    outline: none;
+    flex-grow: 2;
+    flex-shrink: 2;
+    height: 30px;
+    flex-basis: 50px;
+    width: 100px;
+    cursor: pointer;
+    border: 1px solid rgb(115, 181, 202);
+    border-radius: 5px;
+    background-color: rgb(228, 242, 253);
+    transition: background 0.1s ease-in-out;
+    
+}
+.mnth-navs:hover{
+    border: 1px solid rgb(118, 202, 228);
+    background-color: rgb(203, 226, 255);
+}
+.mnth-navs:focus{
+    outline: none;
+}
+#mnth-btns{
+    flex-grow: 5;
+    flex-shrink: 5;
+}
+
+
+/*Admin Area in the main page*/
+.line{
+    height: 5px;
+    background-color:rgb(196, 214, 221);
+    width: 80%;
+    border-radius: 3px;
+    margin: auto;
+}
+
+.time-header{
+    display: block;
+    padding: 5px 10px;
+    border-radius: 2px;
+    margin: 5px;
+    background-color: rgb(221, 221, 221);
+}
+
+.users-list{
+    margin-left: 40px;
+}
+.users-list li{
+    padding: 5px;
+    margin: 5px 5px;
+    font-size: 18px;
+    list-style: square;
+}
+.add-time-link{
+    margin-left: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+.add-time-btn{
+    padding: 5px 10px 5px 10px;
+    
+    display: block;
+    background-color: azure;
+    border: 1px black solid;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+.add-time-btn:hover{
+    background-color: rgb(194, 253, 255);
+    color: black;
+}
+

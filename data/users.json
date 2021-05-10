@@ -1,0 +1,14 @@
+{
+    "5fef47a2e7ee7": {
+        "fullname": "Admin",
+        "address": "Hungary, Budapest",
+        "SSN": "123456789",
+        "email": "admin@nemkovid.hu",
+        "time": "",
+        "password": "$2y$10$T.IuOPyip9CTl7LBZoobcOPcgYmo5vTF.FTqazZEpT0XMXbS.lzVK",
+        "roles": [
+            "admin"
+        ],
+        "id": "5fef47a2e7ee7"
+    }
+}

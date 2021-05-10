@@ -1,0 +1,117 @@
+* {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --header-bg-color: #3f91c7;
+}
+
+.main-nav {
+    background-color: var(--header-bg-color);
+    padding: 20px;
+}
+.nav-header {
+    text-align: center;
+    color: azure;
+    text-shadow: 5px 5px 10px black;
+    padding: 10px 10px 10px 10px;
+    background-color: var(--header-bg-color);
+}
+
+
+/* Main body container */
+.main-container{
+    width:90%;
+    padding: 10px;
+    margin: auto;
+}
+
+.main-container section{
+    position: relative;
+    border-radius: 10px;
+    max-width: 400px;
+    border: 15px solid rgb(221, 245, 255);
+    margin: 30px auto;
+}
+
+.main-container section h1{
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 3px;
+    background-color: rgb(221, 245, 255);
+    top: -20px;
+}
+
+.main-container section .section-content{
+    margin-top: 20px ;
+    overflow: auto;
+}
+
+/*Form content*/
+.label{
+    text-align: center;
+    margin: 10px auto auto auto;
+}
+.costum_input {
+    display: block;
+    margin: 5px auto 10px auto;
+    height: 25px;
+    outline: none;
+    border: 2px solid rgb(149, 162, 170);
+    width: 200px;
+    padding: 0 5px;
+}
+
+.line{
+    height: 5px;
+    background-color:rgb(196, 214, 221);
+    width: 80%;
+    border-radius: 3px;
+    margin: auto;
+}
+.submit-btn{
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: azure;
+    display: block;
+    margin: 20px auto 10px auto;
+    cursor: pointer;
+    border: 1px solid var(--header-bg-color);
+    outline: none;
+    transition: 0.1s background ease-in-out;
+}
+.submit-btn:hover{
+    background-color: rgb(197, 203, 218);
+}
+
+.error{
+    color: black;
+    display: block;
+    background-color: lightcoral;
+    border: 1px solid red;
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 300px;
+}
+
+.link-btns{
+    display: inline-block;
+    width: auto;
+
+    margin: 0 10px;
+}
+
+.info-show{
+    margin: 10px;
+    height: 22px;
+    width: 200px;
+    outline: none;
+    background-color: rgb(221, 221, 221);
+    border: 2px solid var(black);
+}
