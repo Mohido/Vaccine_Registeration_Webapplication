@@ -1,11 +1,24 @@
-## Minimum requirements
+Website: http://webprogramming.inf.elte.hu/students/zyqsyj/vaxin_res/
+
+
+# Explanation
+This is a full_stack web application. It was made for learning purposes. Mainly focuses on the backend and datamanagement of the web applications.
+The data storage is a ".json" file.
+
+# Easieast way to use:
+1) Donwnload the souce files from here.
+2) Lunch the web application on a server.
+3) You can now Login or register from the application.... 
+4) For trying Admin previlages and admin functionalities. You can register and then go to the "Data/Users.json" then change the Role of the registered user from "user" to "admin". 
+5) Now you can log in as an admin and try out the full functionalities given to the admin.
+
+
+## All requirements
 - [T] List page: gets displayed (0 points)
 - [T] List page: static text and information (0 points)
 - [T] List page: list all dates (1 point)
 - [T] Admin: add a new time, error handling (without login and admin functions) (2 points)
 - [T] Admin: add a new date, save successfully (without login and admin functions) (2 points)
-
-## Basic tasks
 - [T] List page: Lists dates in a given month (0.5 points)
 - [T] List page: Lists previous and next month (1 points)
 - [T] List page: Free dates are green, full dates are red (0.5 points)
@@ -29,8 +42,6 @@
 - [T] Admin: announcing a new date is only available with admin user (0.5 points)
 - [T] No major errors, no strange phenomena (0.5 points)
 - [T] Nice, well-designed interface (1 point)
-
-## Extra tasks
 - [T] List page: dates in calendar format (2.5 points)
 - [T] List page: AJAX calendar scrolling (1 point)
 - [T] Login: saves the selected date (1 point)
